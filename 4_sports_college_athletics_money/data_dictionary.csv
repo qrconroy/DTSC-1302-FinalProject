@@ -1,0 +1,35 @@
+file,variable,type,meaning,values_or_range,missing,source
+4_college_athletics_eada_2024_25.csv,unitid,text,Federal school ID (IPEDS). Unique key; school names repeat,"2,037 distinct values, e.g. 100654",0,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,school,text,School name,"2,023 distinct values, e.g. Alabama A & M University",0,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,city,text,City,"1,330 distinct values, e.g. Normal",0,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,state,text,State or territory (blank for one Canadian school),"53 distinct values, e.g. AL",1,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,division,text,Athletic association and division,"19 distinct values, e.g. NCAA Division I-FCS",0,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,sector,text,Public/private and 2-year/4-year,"Private for-profit, 4-year or above; Private nonprofit, 2-year; Private nonprofit, 4-year or above; Public, 2-year; Public, 4-year or above; Sector Unknown",0,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,students_men,integer,Full-time undergraduate men,"2 to 30,671",0,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,students_women,integer,Full-time undergraduate women,"10 to 32,943",0,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,students_total,integer,Full-time undergraduates (men + women),"52 to 60,277",0,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,athletes_men,integer,Men athletes (each counted once),0 to 787,0,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,athletes_women,integer,Women athletes (each counted once),0 to 577,0,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,pct_women_students,decimal,% of undergraduates who are women,2.6 to 99.9,0,Derived from EADA 2024–25
+4_college_athletics_eada_2024_25.csv,pct_women_athletes,decimal,% of athletes who are women,0 to 100,0,Derived from EADA 2024–25
+4_college_athletics_eada_2024_25.csv,title9_gap,decimal,pct_women_athletes − pct_women_students; negative = women under-represented in sports,-74.2 to 47.4,0,Derived from EADA 2024–25
+4_college_athletics_eada_2024_25.csv,big_title9_gap,0/1 flag,1 if title9_gap is −5 points or worse,"1 = yes (1,690); 0 = no (347)",0,Derived from EADA 2024–25
+4_college_athletics_eada_2024_25.csv,athletic_aid_men,integer,Athletic scholarship $ to men,"0 to 19,645,560",16,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,athletic_aid_women,integer,Athletic scholarship $ to women,"0 to 20,055,491",19,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,recruiting_men,integer,"Recruiting spending $, men's teams","0 to 5,926,680",16,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,recruiting_women,integer,"Recruiting spending $, women's teams","0 to 1,867,789",19,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,head_coach_pay_mens_teams,integer,"Average head coach salary, men's teams, $ per full-time position","15,000 to 3,486,642",16,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,head_coach_pay_womens_teams,integer,"Average head coach salary, women's teams, $ per full-time position","15,000 to 857,166",20,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,total_revenue,integer,"Total athletics revenue, $","13,766 to 343,106,827",0,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,total_expenses,integer,"Total athletics expenses, $","13,766 to 295,265,883",0,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,profit,integer,total_revenue − total_expenses. Often 0: schools count university support as revenue,"0 to 65,693,046",0,Derived from EADA 2024–25
+4_college_athletics_eada_2024_25.csv,has_football,0/1 flag,1 if the school has football,"1 = yes (876); 0 = no (1,161)",0,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,football_revenue,integer,"Football revenue, $","0 to 195,723,436",329,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,football_expenses,integer,"Football expenses, $","0 to 93,255,797",329,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,football_profit,integer,"football_revenue − football_expenses, $","-8,609,425 to 113,636,406",329,Derived from EADA 2024–25
+4_college_athletics_eada_2024_25.csv,football_makes_money,0/1 flag,1 if football revenue > expenses (blank if no football),1 = yes (312); 0 = no (564),1161,Derived from EADA 2024–25
+4_college_athletics_eada_2024_25.csv,mens_bball_revenue,integer,"Men's basketball revenue, $","7,646 to 52,729,506",111,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,mens_bball_expenses,integer,"Men's basketball expenses, $","7,646 to 31,994,396",111,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,womens_bball_revenue,integer,"Women's basketball revenue, $","3,441 to 13,119,360",180,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,womens_bball_expenses,integer,"Women's basketball expenses, $","3,220 to 13,119,360",180,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
+4_college_athletics_eada_2024_25.csv,ncaa_d1,0/1 flag,"1 if NCAA Division I (FBS, FCS, or no football)","1 = yes (358); 0 = no (1,679)",0,"U.S. Department of Education, Equity in Athletics Data Analysis (EADA) 2024–25"
